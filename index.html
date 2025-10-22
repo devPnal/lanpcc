@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LANP</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans KR', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fafafa;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 80px 40px;
+        }
+
+        header {
+            margin-bottom: 60px;
+            border-bottom: 2px solid #667766;
+            padding-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: 700;
+            color: #667766;
+	    display: inline-block;
+        }
+
+        .subtitle {
+	    display: inline-block;
+            font-size: 20px;
+            color: #666;
+            font-weight: 400;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #667766;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .about {
+            font-size: 18px;
+            color: #444;
+            line-height: 1.8;
+        }
+
+        .experience-item {
+            margin-bottom: 30px;
+            padding-left: 20px;
+            border-left: 3px solid #667766;
+        }
+
+        .experience-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .experience-period {
+            font-size: 14px;
+            color: #667766;
+            margin-bottom: 10px;
+        }
+
+        .experience-desc {
+            font-size: 16px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .contact {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .contact-item {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .contact-label {
+            display: inline-block;
+            width: 100px;
+            font-weight: 600;
+            color: #667766;
+        }
+
+        a {
+            color: #667766;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-bottom 0.3s;
+        }
+
+        a:hover {
+            border-bottom: 1px solid #667766;
+        }
+
+        .tech-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .tech-table td {
+            padding: 8px 0;
+            vertical-align: top;
+        }
+
+        .tech-table td:first-child {
+            text-align: right;
+            font-weight: 600;
+            color: #667766;
+            padding-right: 20px;
+            width: 70px;
+        }
+
+        .tech-table td:last-child {
+            text-align: left;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 40px 20px;
+            }
+
+            h1 {
+                font-size: 36px;
+            }
+
+            .subtitle {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>정규승</h1>
+            <p class="subtitle">Jeong Gyuseung</p>
+        </header>
+
+        <section>
+            <h2>소개</h2>
+            <p class="about">
+		이론보다 현장이 좋은 개발꿈나무입니다. 다양한 일을 남들보다 한 발짝 먼저 경험하고자 하고, 그러고 있습니다.
+            </p>
+        </section>
+
+        <section>
+            <h2>걸어온 길</h2>
+            <div class="experience-item">
+                <div class="experience-title">학력</div>
+                <div class="experience-period">2020.3. - 2027.2.</div>
+                <p class="experience-desc">
+			한국기술교대에서 컴퓨터공학부 전공으로 졸업 예정입니다.
+                </p>
+            </div>         
+	    <div class="experience-item">
+                <div class="experience-title">출판 이력</div>
+                <div class="experience-period">2025.2</div>
+                <p class="experience-desc">
+			<a href="https://ahkv2.pnal.dev/book" target="_blank"><처음이라도 괜찮아, 오토핫키 프로그래밍></a> (종이 및 eBook, 2025, 디지털북스)<br>
+                </p>
+            </div>     			
+	    <div class="experience-item">
+                <div class="experience-title">하고 있는 것</div>
+                <div class="experience-period">2018 -</div>
+                <p class="experience-desc">
+			- iOS 정기결제 구독 앱 '마이구들' 개발 및 운영<br>
+			- iOS/Android 아날로그 감성 SNS '소소상자' 개발 및 운영<br>				
+			- Windows 캡처 및 오버레이 보조 도구 '흰캡처' 개발 및 운영<br>	
+			- 고수준 프로그래밍 언어 'AutoHotkey' 온라인 강좌 작성 및 운영<br>	
+ 			- 기타 소소한 오픈 소스 개발 및 기여 활동을 하며 여러 서비스를 배포 및 운영 중에 있습니다.
+                </p>
+            </div>	    
+	    <div class="experience-item">
+                <div class="experience-title">경험해본 것</div>
+                <div class="experience-period">단순히 '해봤다'가 아닌, 제대로 한 번이라도 서비스 해본 것을 기준으로 합니다.</div>
+                <p class="experience-desc">
+			<table class="tech-table">
+				<tr>
+					<td>Web</td>
+					<td>HTML/CSS/JS, Flask, PHP, Nginx, Apache</td>
+				</tr>
+				<tr>
+					<td>DB</td>
+					<td>MySQL(MariaDB), PostgreSQL</td>
+				</tr>
+				<tr>
+					<td>Mobile</td>
+					<td>iOS(Swift / SwiftUI), Android(Kotlin, Compose)</td>
+				</tr>
+				<tr>
+					<td>Other</td>
+					<td>C#(WinForm), AHK</td>
+				</tr>
+			</table>
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h2>연락처 / 외부 링크</h2>
+            <div class="contact">
+                <div class="contact-item">
+                    <span class="contact-label">이메일</span>
+                    <a href="mailto:me@lanp.cc">me@lanp.cc</a>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label">개발 블로그</span>
+                    <a href="https://blog.pnal.dev" target="_blank">blog.pnal.dev</a>
+                </div>                
+		<div class="contact-item">
+                    <span class="contact-label">GitHub</span>
+                    <a href="https://github.com/devpnal" target="_blank">github.com/devpnal</a>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
