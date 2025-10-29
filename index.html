@@ -25,20 +25,23 @@
         }
 
         header {
+            display: flex;
             margin-bottom: 60px;
             border-bottom: 2px solid #667766;
-            padding-bottom: 40px;
+            justify-content: space-between;
+            align-items: baseline;
+            padding-bottom: 10px;
         }
 
         h1 {
             font-size: 48px;
             font-weight: 700;
             color: #667766;
-	    display: inline-block;
+	        display: inline-block;
         }
 
         .subtitle {
-	    display: inline-block;
+	        display: inline-block;
             font-size: 20px;
             color: #666;
             font-weight: 400;
@@ -99,6 +102,10 @@
             margin-bottom: 10px;
         }
 
+        .contact-item:last-child {
+            margin-bottom: 0px;
+        }
+
         .contact-label {
             display: inline-block;
             width: 100px;
@@ -110,11 +117,10 @@
             color: #667766;
             text-decoration: none;
             border-bottom: 1px solid transparent;
-            transition: border-bottom 0.3s;
         }
-
+    
         a:hover {
-            border-bottom: 1px solid #667766;
+            text-decoration: underline;
         }
 
         .tech-table {
@@ -157,14 +163,17 @@
 <body>
     <div class="container">
         <header>
+            <div>
             <h1>정규승</h1>
             <p class="subtitle">Jeong Gyuseung</p>
+            </div>
+            <a href="mailto:me@lanp.cc">✉ me@lanp.cc</a>
         </header>
 
         <section>
             <h2>소개</h2>
             <p class="about">
-		실전이 좋은 개발꿈나무입니다. 다양한 일을 남들보다 한 발짝 먼저 경험하고자 하고, 그러고 있습니다.
+		        경험을 좋아하는 개발꿈나무입니다. 다양한 일을 남들보다 한 발짝 먼저 경험하고자 하고, 그러고 있습니다.
             </p>
         </section>
 
@@ -174,7 +183,7 @@
                 <div class="experience-title">학력</div>
                 <div class="experience-period">2020.3. - 2027.2.</div>
                 <p class="experience-desc">
-			한국기술교대에서 컴퓨터공학부 전공으로 졸업 예정입니다.
+			        한국기술교대에서 컴퓨터공학부 전공으로 졸업 예정입니다.
                 </p>
             </div>         
 	    <div class="experience-item">
@@ -188,16 +197,16 @@
                 <div class="experience-title">하고 있는 것</div>
                 <div class="experience-period">2018 -</div>
                 <p class="experience-desc">
-			- iOS 정기결제 구독 앱 '마이구들' 개발 및 운영<br>
-			- iOS/Android 아날로그 감성 SNS '소소상자' 개발 및 운영<br>				
-			- Windows 캡처 및 오버레이 보조 도구 '흰캡처' 개발 및 운영<br>	
-			- 고수준 프로그래밍 언어 'AutoHotkey' 온라인 강좌 작성 및 운영<br>	
- 			- 기타 소소한 오픈 소스 개발 및 기여 활동을 하며 여러 서비스를 배포 및 운영 중에 있습니다.
+                    - iOS 정기결제 구독 앱 '<a href="https://blog.pnal.dev/18" target="_blank">마이구들</a>' 개발 및 운영<br>
+                    - iOS/Android 아날로그 감성 SNS '소소상자' 개발 및 운영<br>				
+                    - Windows 캡처 및 오버레이 보조 도구 '<a href="https://blog.pnal.dev/16" target="_blank">흰캡처</a>' 개발 및 운영<br>	
+                    - 고수준 프로그래밍 언어 'AutoHotkey' <a href="https://ahkv2.pnal.dev" target="_blank">온라인 강좌</a> 작성 및 운영<br>	
+                    - 기타 소소한 오픈 소스 개발 및 기여 활동을 하며 여러 서비스를 배포 및 운영 중에 있습니다.
                 </p>
             </div>	    
 	    <div class="experience-item">
                 <div class="experience-title">경험해본 것</div>
-                <div class="experience-period">단순히 '해봤다'가 아닌, 제대로 한 번이라도 서비스 해본 것을 기준으로 합니다.</div>
+                <div class="experience-period">단순히 '해봤다'가 아닌, 제대로 한 번이라도 <b>서비스 해본 것</b>을 기준으로 합니다.</div>
                 <p class="experience-desc">
 			<table class="tech-table">
 				<tr>
@@ -222,17 +231,17 @@
         </section>
 
         <section>
-            <h2>연락처 / 외부 링크</h2>
-            <div class="contact">
-                <div class="contact-item">
+            <h2>외부 링크</h2>
+            <div class="contact">     
+		        <div class="contact-item">
                     <span class="contact-label">이메일</span>
-                    <a href="mailto:me@lanp.cc">me@lanp.cc</a>
+                    <a href="mailto:me@lanp.cc" target="_blank">me@lanp.cc</a>
                 </div>
                 <div class="contact-item">
                     <span class="contact-label">개발 블로그</span>
                     <a href="https://blog.pnal.dev" target="_blank">blog.pnal.dev</a>
                 </div>                
-		<div class="contact-item">
+		        <div class="contact-item">
                     <span class="contact-label">GitHub</span>
                     <a href="https://github.com/devpnal" target="_blank">github.com/devpnal</a>
                 </div>
@@ -240,5 +249,4 @@
         </section>
     </div>
 </body>
-
 </html>
